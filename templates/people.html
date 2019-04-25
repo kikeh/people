@@ -1,0 +1,25 @@
+{%- extends "base.html" %}
+
+{% import "bootstrap/utils.html" as utils %}
+
+{% block content %}
+  <div class="container">
+    <h2>Día: {{date.day}}/{{date.month}}</h2>
+    <h3>Cumpleaños:</h3>
+    {% if birthdays|length %}
+      {% for person in birthdays %}
+        <h5>{{ person.name }}</h5>
+      {%  endfor %}
+    {% else %}
+      <h5>-</h5>
+    {% endif %}
+    <h3>Aniversarios:</h3>
+    {% if anniversaries|length %}
+      {% for person in anniversaries %}
+        <h5>{{ person.name }}</h5>
+      {%  endfor %}
+    {% else %}
+      <h5>-</h5>
+    {% endif %}
+</div>
+{%- endblock %}

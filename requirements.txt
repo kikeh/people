@@ -1,0 +1,6 @@
+Flask==1.0.2
+environs==4.1.0
+flask_bootstrap==3.3.7.1
+requests==2.21.0
+sendgrid==5.6.0
+zappa==0.47.1

@@ -1,0 +1,15 @@
+{%- extends "bootstrap/base.html" %}
+
+{% block title %}People{% endblock %}
+
+{% import "bootstrap/fixes.html" as fixes %}
+
+{% block head %}
+{{super()}}
+{{fixes.ie8()}}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+{%- endblock %}
+
+{% block styles -%}
+{{super()}}
+{% endblock %}
